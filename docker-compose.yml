@@ -1,0 +1,97 @@
+# One command brings up the whole platform:
+#     docker compose up --build
+# Services: Postgres, Redis, the ASGI API (Daphne = HTTP + WebSocket), a Celery
+# worker (incremental aggregate refresh on write), and the React (Vite) frontend.
+#
+# The `api` container (PRIMARY=1) collects static + generates seed files. Migrations
+# and seed loading are run manually (see README). The worker waits for `api`.
+
+x-backend-env: &backend_env
+  DJANGO_SECRET_KEY: dev-insecure-secret-change-me-please-32b
+  DJANGO_DEBUG: "true"
+  POSTGRES_HOST: db
+  POSTGRES_DB: capex
+  POSTGRES_USER: capex
+  POSTGRES_PASSWORD: capex
+  REDIS_URL: redis://redis:6379/0
+  CELERY_BROKER_URL: redis://redis:6379/0
+  # Django admin superuser (log in at /admin/ with these):
+  DJANGO_SUPERUSER_EMAIL: admin
+  DJANGO_SUPERUSER_PASSWORD: admin
+  # Seed size — override to demo the "big tenant" (org 1 ~5x):
+  #   SEED_SCALE=big  SEED_PPO=8000
+  SEED_ORGS: "8"
+  SEED_PPO: "1500"
+  SEED_SCALE: "normal"
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: capex
+      POSTGRES_USER: capex
+      POSTGRES_PASSWORD: capex
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U capex"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      <<: *backend_env
+      PRIMARY: "1"
+    command: daphne -b 0.0.0.0 -p 8000 config.asgi:application
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/api/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 40
+
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      <<: *backend_env
+      PRIMARY: "0"
+    command: celery -A config worker -l info
+    depends_on:
+      api:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      VITE_API_BASE: /api
+    depends_on:
+      - api
+    ports:
+      - "5173:5173"
+
+volumes:
+  pgdata:

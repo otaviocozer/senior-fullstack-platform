@@ -1,0 +1,1218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; base-uri file:; img-src file: data:; style-src 'nonce-lA7DeybbpQT2xvRj+46dwg==' file:; script-src 'nonce-lA7DeybbpQT2xvRj+46dwg==' file:">
+<meta name="referrer" content="no-referrer">
+<link rel='icon' type='image/x-icon' href='data:image/x-icon;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHwAAAIwcHBy1JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluBwcHLUAAACMAAAAHwAAAAAAAAAnOTk56J+fn//Jycn/0dHR/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0dHR/8nJyf+fn5//OTk56AAAACcQEBCvr6+v//Pz8//8/Pz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//z8/P/z8/P/r6+v/xAQEK9ERETz3t7e//7+/v/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v7/3t7e/0RERPNbW1v/6enp////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6enp/1tbW/9fX1//6urq////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6urq/19fX/9fX1//6urq//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7+/v//////////////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////8+vn/x45j/8eOY//HjmP/x45j/97Ds/////////////////////////////////////////////bv7P/HjmP/x45j/8eOY//HjmP/59XL////////////////////////////////////////////7u7u/3p6ev/x8fH/////////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf////////////////////////////////////////////Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8///////////////////////////////////////4+Pj/fX19/wAAAP92dnb/9vb2////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf////////////////////////////////////////////Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////7+/v+QkJD/AAAA/wAAAP8AAAD/lpaW//z8/P//////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf/////////////////69vX/8efi//////////////////Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8/////////////////////////////////6qqqv8AAAD/AAAA/wAAAP8AAAD/AAAA/6ysrP//////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf/////////////////Rpov/wHw6//bw7f////////////Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8////////////////////////////wcHB/w0NDf8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/Dw8P/////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf///////////97Cs/+9cQD/vXEA/8iRaf/8+fj///////Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8///////////////////////Z2dn/Kioq/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8cHBz/09PT////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf//////6trS/75zFv+9cQD/vXEA/71xAP/UrZX//v39//Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8/////////////////+rq6v8qKir/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/R0dH/+Xl5f//////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9m4pf/07en/wHw6/71xAP+9cQD/vXEA/71xAP+9cQD/4Me5//Ts6f+9cQD/vXEA/71xAP+9cQD/4cm8////////////8/Pz/1NTU/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1ZWVv/z8/P/////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/9Wvmf/Filv/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/+HIuv+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP/Jk23/3sGy/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vXEA/8J/RP/38e///v38/9SslP+9cQD/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/vnUi/+7g2v////////////r39v/Jk23/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/71xAP+9cQD/4sq9///////////////////////17er/wX09/71xAP+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////7+fj/vXEA/71xAP+9cQD/vXEA/71xAP/VsJr/////////////////////////////////7N3W/71yDf+9cQD/vXEA/71xAP+9cQD/4cm8//////////////////////////////////////94eHj/AAAA/wAAAP8AAAD/Y2Nj////////////////////////////////////////////6urq/19fX/9fX1//6urq///////////////////////8+vn/x45j/8eOY//HjmP/x45j/8+hhP/8+fj//////////////////////////////////////+HIu//HjmP/x45j/8eOY//HjmP/59XL//////////////////////////////////////+SkpL/Y2Nj/2NjY/9jY2P/hYWF////////////////////////////////////////////6urq/19fX/9fX1//6urq////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6urq/19fX/9fX1//6urq////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6urq/19fX/9bW1v/6enp////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6enp/1tbW/9ERETz3t7e//7+/v/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v7/3t7e/0RERPMQEBCvr6+v//Pz8//8/Pz//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//39/f/9/f3//f39//z8/P/z8/P/r6+v/xAQEK8AAAAnOTk56J+fn//Jycn/0dHR/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0tLS/9LS0v/S0tL/0dHR/8nJyf+fn5//OTk56AAAACcAAAAAAAAAHwAAAIwcHBy1JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluCUlJbglJSW4JSUluBwcHLUAAACMAAAAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABAAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAD///////8AAP///////wAA////////AAAoAAAAIAAAAEAAAAABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFDw8PKBzc3POenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es9zc3POPDw8oAAAABRMTEyz19fX//b29v/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//b29v/X19f/TExMs4uLi/r7+/v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////v7+/+Li4v6l5eX//39/f///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////f39/5eXl/+YmJj//f39////////////+vb0//Hm4f/x5uH/9O3p/////////////////////////////fz7//Hm4f/x5uH/8ujj/////////////////////////////////+7u7v/////////////////////////////////9/f3/mJiY/5iYmP/9/f3////////////p2M//vXEA/71xAP/QpIn////////////////////////////48/D/vXEA/71xAP+9cQD////////////////////////////t7e3/PT09/8PDw/////////////////////////////39/f+YmJj/mJiY//39/f///////////+nYz/+9cQD/vXEA/9Ckif////////////////////////////jz8P+9cQD/vXEA/71xAP//////////////////////9PT0/2NjY/8AAAD/IiIi/9jY2P///////////////////////f39/5iYmP+YmJj//f39////////////6djP/71xAP+9cQD/0KSJ////////////1K+Y/+/j3P//////+PPw/71xAP+9cQD/vXEA//////////////////r6+v+BgYH/AAAA/wAAAP8AAAD/PT09/+fn5//////////////////9/f3/mJiY/5iYmP/9/f3////////////p2M//vXEA/71xAP/QpIn//////+HJu/+9cQD/woBH//fx7//48/D/vXEA/71xAP+9cQD/////////////////m5ub/wAAAP8AAAD/AAAA/wAAAP8AAAD/VlZW//Ly8v////////////39/f+YmJj/mJiY//39/f///////////+nYz/+9cQD/vXEA/9Ckif/u4dr/vXEA/71xAP+9cQD/ypdz//Xu6/+9cQD/vXEA/71xAP///////////7a2tv8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/c3Nz//r6+v///////f39/5iYmP+YmJj//f39////////////6djP/71xAP+9cQD/yJFp/8F9Pf+9cQD/vXEA/71xAP+9cQD/zp+B/71xAP+9cQD/vXEA////////////////////////////Y2Nj/wAAAP8AAAD/4eHh///////////////////////9/f3/mJiY/5iYmP/9/f3////////////p2M//vXEA/71xAP+9cQD/vXEA/71xAP/On4H/wX09/71xAP+9cQD/vXEA/71xAP+9cQD///////////////////////////9jY2P/AAAA/wAAAP/h4eH///////////////////////39/f+YmJj/mJiY//39/f///////////+nYz/+9cQD/vXEA/71xAP+9cQD/yJFp//v5+P/q2tH/vXEA/71xAP+9cQD/vXEA/71xAP///////////////////////////2NjY/8AAAD/AAAA/+Hh4f///////////////////////f39/5iYmP+YmJj//f39////////////6djP/71xAP+9cQD/vXEA/8F9Pf/17uv////////////ew7P/vXEA/71xAP+9cQD/vXEA////////////////////////////Y2Nj/wAAAP8AAAD/4eHh///////////////////////9/f3/mJiY/5iYmP/9/f3////////////p2M//vXEA/71xAP+9cQD/7N3W//////////////////79/f/Rp43/vXEA/71xAP+9cQD///////////////////////////9jY2P/AAAA/wAAAP/h4eH///////////////////////39/f+YmJj/mJiY//39/f////////////r29P/x5uH/8ebh//Pr5/////////////////////////////z5+P/x5uH/8ebh//Lo4////////////////////////////+Xl5f/h4eH/4eHh//j4+P///////////////////////f39/5iYmP+Xl5f//f39///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9/f3/l5eX/4uLi/r7+/v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////v7+/+Li4v6TExMs9fX1//29vb/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/4+Pj/+Pj4//j4+P/29vb/19fX/0xMTLMAAAAUPDw8oHNzc856enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3p6es96enrPenp6z3Nzc848PDygAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////KAAAABAAAAAgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJiYmJrKysrnzMzM58zMzOfMzMznzMzM58zMzOfMzMznzMzM58zMzOfMzMznzMzM58zMzOfMzMznysrK55iYmJrQ0ND+///////////////////////////////////////////////////////////////////////////Q0ND+0tLS///////m0sf/3sOz/////////////fv7/9m4pf/t4Nn////////////Y2Nj/8vLy////////////0tLS/9LS0v//////1K6Y/8eOY///////8efi//v5+P+9cQD/4cm8///////j4+P/MTEx/3h4eP/5+fn//////9LS0v/S0tL//////9SumP/HjmP/5M/E/751Iv/t3tj/vXEA/+HJvP/v7+//UVFR/wAAAP8AAAD/kpKS//7+/v/S0tL/0tLS///////Urpj/wHo1/750HP/CgUn/wX9C/71xAP/hybz///////////9HR0f/paWl////////////0tLS/9LS0v//////1K6Y/71xAP/QpYr/+fXz/8aLX/+9cQD/4cm8////////////R0dH/6Wlpf///////////9LS0v/S0tL//////+bSx//auaf/+vf2///////z6+f/2bil/+3g2f///////////6ysrP/Nzc3////////////S0tL/0NDQ/v//////////////////////////////////////////////////////////////////////////0NDQ/piYmJrKysrnzMzM58zMzOfMzMznzMzM58zMzOfMzMznzMzM58zMzOfMzMznzMzM58zMzOfMzMznysrK55iYmJoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA'>
+<base href="file:///C:/Users/USER/OneDrive - Blue Ocean Strategic Partners/BlueOcean/Projects/Assignments/senior-fullstack-platform/">
+<title>ASSIGNMENT.md</title>
+<style nonce="lA7DeybbpQT2xvRj+46dwg==">
+:root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #111111;
+    --muted: #444;
+    --codebg: #f4f4f4;
+    --border: #dddddd;
+    --link: #0b57d0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0f1115;
+        --fg: #e7e7e7;
+        --muted: #b8b8b8;
+        --codebg: #1b1f2a;
+        --border: #2a2f3a;
+        --link: #7ab7ff;
+    }
+}
+
+/* ===== LIGHT THEME VARIATIONS ===== */
+
+/* Light Default (variation 0) */
+:root[data-theme="light"],
+:root[data-theme="light"][data-variation="0"] {
+    --bg: #ffffff;
+    --fg: #111111;
+    --muted: #444;
+    --codebg: #f4f4f4;
+    --border: #dddddd;
+    --link: #0b57d0;
+}
+
+/* Light Warm (variation 1) */
+:root[data-theme="light"][data-variation="1"] {
+    --bg: #fdfbf7;
+    --fg: #1a1815;
+    --muted: #5c5347;
+    --codebg: #f5f0e8;
+    --border: #e5ddd0;
+    --link: #8b5c2a;
+}
+
+/* Light Cool (variation 2) */
+:root[data-theme="light"][data-variation="2"] {
+    --bg: #f8fafc;
+    --fg: #0f172a;
+    --muted: #475569;
+    --codebg: #f1f5f9;
+    --border: #e2e8f0;
+    --link: #2563eb;
+}
+
+/* Light Sepia (variation 3) */
+:root[data-theme="light"][data-variation="3"] {
+    --bg: #f4ecd8;
+    --fg: #2c2416;
+    --muted: #5c5040;
+    --codebg: #ebe3cf;
+    --border: #d4c9b0;
+    --link: #7c4d12;
+}
+
+/* Light High Contrast (variation 4) */
+:root[data-theme="light"][data-variation="4"] {
+    --bg: #ffffff;
+    --fg: #000000;
+    --muted: #333333;
+    --codebg: #f0f0f0;
+    --border: #000000;
+    --link: #0000cc;
+}
+
+/* ===== DARK THEME VARIATIONS ===== */
+
+/* Dark Default (variation 0) */
+:root[data-theme="dark"],
+:root[data-theme="dark"][data-variation="0"] {
+    --bg: #0f1115;
+    --fg: #e7e7e7;
+    --muted: #b8b8b8;
+    --codebg: #1b1f2a;
+    --border: #2a2f3a;
+    --link: #7ab7ff;
+}
+
+/* Dark Warm (variation 1) */
+:root[data-theme="dark"][data-variation="1"] {
+    --bg: #1a1614;
+    --fg: #e8e2dc;
+    --muted: #b5a899;
+    --codebg: #252019;
+    --border: #3a332a;
+    --link: #e0a870;
+}
+
+/* Dark Cool (variation 2) */
+:root[data-theme="dark"][data-variation="2"] {
+    --bg: #0c1222;
+    --fg: #e2e8f0;
+    --muted: #94a3b8;
+    --codebg: #1e293b;
+    --border: #334155;
+    --link: #60a5fa;
+}
+
+/* Dark OLED Black (variation 3) */
+:root[data-theme="dark"][data-variation="3"] {
+    --bg: #000000;
+    --fg: #ffffff;
+    --muted: #a0a0a0;
+    --codebg: #0a0a0a;
+    --border: #222222;
+    --link: #6db3f2;
+}
+
+/* Dark Dimmed (variation 4) */
+:root[data-theme="dark"][data-variation="4"] {
+    --bg: #161b22;
+    --fg: #c9d1d9;
+    --muted: #8b949e;
+    --codebg: #21262d;
+    --border: #30363d;
+    --link: #58a6ff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+pre {
+    background: var(--codebg);
+    padding: 12px;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+code {
+    background: var(--codebg);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+/* code blocks: remove inner padding/background */
+pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 16px 0;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+blockquote {
+    border-left: 4px solid var(--border);
+    padding-left: 12px;
+    color: var(--muted);
+    margin: 16px 0;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#mvTheme {
+    position: fixed;
+    top: 14px;
+    right: 14px;
+    z-index: 9999;
+    border: 1px solid var(--border);
+    background: var(--codebg);
+    color: var(--fg);
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#mvVariation {
+    position: fixed;
+    top: 50px;
+    right: 14px;
+    z-index: 9999;
+    border: 1px solid var(--border);
+    background: var(--codebg);
+    color: var(--fg);
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#mvImages {
+    position: fixed;
+    top: 86px;
+    right: 14px;
+    z-index: 9999;
+    border: 1px solid var(--border);
+    background: var(--codebg);
+    color: var(--fg);
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Theme Variation Dropdown Menu */
+.mv-var-menu {
+    position: fixed;
+    right: 14px;
+    z-index: 10000;
+    border: 1px solid var(--border);
+    background: var(--codebg);
+    border-radius: 10px;
+    padding: 4px 0;
+    min-width: 140px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mv-var-item {
+    display: block;
+    width: 100%;
+    padding: 8px 14px;
+    border: none;
+    background: transparent;
+    color: var(--fg);
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.mv-var-item:hover {
+    background: var(--border);
+}
+
+.mv-var-item.active {
+    font-weight: bold;
+}
+
+.mv-var-item.active::before {
+    content: "✓ ";
+}
+
+</style>
+<link rel="stylesheet" href="file:///C:/Program%20Files/WindowsApps/omasoud.MarkView_1.0.1.0_x64__sy5933etc66t8/app/highlight-theme.css">
+</head>
+<body>
+<button id="mvTheme" type="button">Theme</button>
+
+<script src="file:///C:/Program%20Files/WindowsApps/omasoud.MarkView_1.0.1.0_x64__sy5933etc66t8/app/highlight.min.js" defer></script>
+<script nonce="lA7DeybbpQT2xvRj+46dwg==">
+window.mdviewer_config={"mdDirBase":"file:///C:/Users/USER/OneDrive - Blue Ocean Strategic Partners/BlueOcean/Projects/Assignments/senior-fullstack-platform/","hasRemoteImgs":false,"remoteUrl":"","remoteEnabled":false,"docId":"43275869","localUrl":"file:///C:/Users/USER/AppData/Local/Temp/viewmd_ASSIGNMENT_43275869.html"};
+(function () {
+    const k = "mdviewer_theme_mode";
+    const kLightVar = "mdviewer_light_variation";
+    const kDarkVar = "mdviewer_dark_variation";
+    const r = document.documentElement;
+    const b = document.getElementById("mvTheme");
+    const m = window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)");
+
+    const lightNames = ["Default", "Warm", "Cool", "Sepia", "High Contrast"];
+    const darkNames = ["Default", "Warm", "Cool", "OLED Black", "Dimmed"];
+
+    function sysDark() {
+        return !!(m && m.matches);
+    }
+    function effective(mode) {
+        const d = sysDark();
+        const useDark = (mode === "invert") ? !d : d;
+        return useDark ? "dark" : "light";
+    }
+    function setLabel(mode, theme) {
+        const t = (theme === "dark") ? "Dark" : "Light";
+        b.textContent = (mode === "invert")
+            ? ("Theme: Invert (" + t + ")")
+            : ("Theme: System (" + t + ")");
+    }
+    function getVariation(theme) {
+        const key = (theme === "dark") ? kDarkVar : kLightVar;
+        const v = localStorage.getItem(key);
+        const n = parseInt(v, 10);
+        return (n >= 0 && n <= 4) ? n : 0;
+    }
+    function setVariation(theme, index) {
+        const key = (theme === "dark") ? kDarkVar : kLightVar;
+        localStorage.setItem(key, String(index));
+    }
+    function applyVariation(theme) {
+        const v = getVariation(theme);
+        r.dataset.variation = String(v);
+        updateVariationButton(theme, v);
+    }
+    function updateVariationButton(theme, variation) {
+        const varBtn = document.getElementById("mvVariation");
+        if (!varBtn) return;
+        const names = (theme === "dark") ? darkNames : lightNames;
+        const themeName = (theme === "dark") ? "Dark" : "Light";
+        varBtn.textContent = themeName + " Theme: " + names[variation];
+    }
+    function apply(mode) {
+        const th = effective(mode);
+        r.dataset.theme = th;
+        setLabel(mode, th);
+        applyVariation(th);
+    }
+
+    let mode = localStorage.getItem(k) || "system";
+    if (mode !== "system" && mode !== "invert") mode = "system";
+    apply(mode);
+
+    b.addEventListener("click", function () {
+        mode = (mode === "system") ? "invert" : "system";
+        localStorage.setItem(k, mode);
+        apply(mode);
+    });
+    if (m) {
+        const onChange = function () {
+            apply(mode);
+        };
+        if (m.addEventListener) {
+            m.addEventListener("change", onChange);
+        } else m.addListener(onChange);
+    }
+
+    // Create Variation button
+    const varBtn = document.createElement("button");
+    varBtn.id = "mvVariation";
+    varBtn.type = "button";
+    document.body.appendChild(varBtn);
+
+    const currentTheme = effective(mode);
+    updateVariationButton(currentTheme, getVariation(currentTheme));
+
+    // Dropdown menu state
+    let menuOpen = false;
+    let menuEl = null;
+    let originalVariation = null;
+
+    function closeMenu(revert) {
+        if (!menuEl) return;
+        if (revert && originalVariation !== null) {
+            r.dataset.variation = String(originalVariation);
+        }
+        menuEl.remove();
+        menuEl = null;
+        menuOpen = false;
+        originalVariation = null;
+    }
+
+    function openMenu() {
+        if (menuOpen) {
+            closeMenu(true);
+            return;
+        }
+
+        const theme = r.dataset.theme || "light";
+        originalVariation = getVariation(theme);
+        const names = (theme === "dark") ? darkNames : lightNames;
+
+        menuEl = document.createElement("div");
+        menuEl.className = "mv-var-menu";
+
+        // Position below the variation button
+        const btnRect = varBtn.getBoundingClientRect();
+        menuEl.style.top = (btnRect.bottom + 4) + "px";
+
+        for (let i = 0; i < names.length; i++) {
+            const item = document.createElement("button");
+            item.className = "mv-var-item";
+            if (i === originalVariation) {
+                item.classList.add("active");
+            }
+            item.textContent = names[i];
+            item.dataset.index = String(i);
+
+            item.addEventListener("mouseenter", function () {
+                r.dataset.variation = this.dataset.index;
+            });
+
+            item.addEventListener("click", function (e) {
+                e.stopPropagation();
+                const idx = parseInt(this.dataset.index, 10);
+                setVariation(theme, idx);
+                r.dataset.variation = String(idx);
+                updateVariationButton(theme, idx);
+                originalVariation = null; // Don't revert
+                closeMenu(false);
+            });
+
+            menuEl.appendChild(item);
+        }
+
+        document.body.appendChild(menuEl);
+        menuOpen = true;
+
+        // Close on click outside
+        setTimeout(function () {
+            document.addEventListener("click", onClickOutside);
+            document.addEventListener("keydown", onEscape);
+        }, 0);
+    }
+
+    function onClickOutside(e) {
+        if (menuEl && !menuEl.contains(e.target) && e.target !== varBtn) {
+            closeMenu(true);
+            document.removeEventListener("click", onClickOutside);
+            document.removeEventListener("keydown", onEscape);
+        }
+    }
+
+    function onEscape(e) {
+        if (e.key === "Escape" && menuOpen) {
+            closeMenu(true);
+            document.removeEventListener("click", onClickOutside);
+            document.removeEventListener("keydown", onEscape);
+        }
+    }
+
+    varBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        openMenu();
+    });
+
+    // Expose applyVariation for theme toggle coordination
+    window.mdviewer_applyVariation = applyVariation;
+})();
+
+(function () {
+    const cfg = window.mdviewer_config || {};
+    const docId = cfg.docId || "global";
+    const imgKey = "mdviewer_remote_images_" + docId;
+    const ackKey = "mdviewer_remote_images_ack_" + docId;
+
+    const btn = document.getElementById("mvImages");
+
+    function safeGet(k) {
+        try {
+            return localStorage.getItem(k);
+        } catch {
+            return null;
+        }
+    }
+    function safeSet(k, v) {
+        try {
+            localStorage.setItem(k, v);
+        } catch {}
+    }
+
+    const wantRemote = safeGet(imgKey) === "1";
+    const hasRemote = !!cfg.remoteUrl;
+    const isRemotePage = !!cfg.remoteEnabled;
+
+    // If the remote variant exists, enforce the user preference by switching pages.
+    if (hasRemote && wantRemote !== isRemotePage) {
+        window.location.replace(wantRemote ? cfg.remoteUrl : cfg.localUrl);
+        return;
+    }
+
+    // Only show/enable the button if remote images exist for this doc
+    if (!btn || !hasRemote) return;
+
+    btn.textContent = isRemotePage ? "Images: Remote" : "Images: Local";
+
+    btn.addEventListener("click", function () {
+        const nextRemote = !isRemotePage;
+
+        // Only prompt on first enable of Remote for this document
+        if (nextRemote) {
+            const alreadyAcked = safeGet(ackKey) === "1";
+            if (!alreadyAcked) {
+                const ok = window.confirm(
+                    "Enable remote images for this document?\n\n" +
+                        "This will allow the page to load images from the internet (e.g., badges), " +
+                        "which can reveal your IP address and that you opened this file.\n\n" +
+                        "Click OK to enable remote images, or Cancel to keep local-only.",
+                );
+                if (!ok) return;
+                safeSet(ackKey, "1");
+            }
+        }
+
+        safeSet(imgKey, nextRemote ? "1" : "0");
+        window.location.href = nextRemote ? cfg.remoteUrl : cfg.localUrl;
+    });
+})();
+
+(function () {
+    /**
+     * Fix mismatched anchor links created by ConvertFrom-Markdown.
+     * 
+     * Problem: ConvertFrom-Markdown generates inconsistent IDs:
+     *   - TOC link: href="#3-design-goals"
+     *   - Heading ID: id="design-goals" (number prefix stripped)
+     * 
+     * Solution: For each broken anchor, try to find a matching element
+     * by progressively stripping leading number prefixes from the target.
+     * 
+     * This can be removed once ConvertFrom-Markdown generates consistent 
+     * IDs. So as of now, this code:
+     * @"
+     * - [Design Goals](#3-design-goals)
+     * - [Other Goals](#other-goals)
+     * ## 3. Design Goals
+     * ## 4. Other Goals
+     * "@ | ConvertFrom-Markdown | Select-Object -ExpandProperty Html
+     * Generates the following HTML:
+     * <ul>
+     *     <li><a href="#3-design-goals">Design Goals</a></li>
+     *     <li><a href="#other-goals">Other Goals</a></li>
+     * </ul>
+     * <h2 id="design-goals">3. Design Goals</h2>
+     * <h2 id="other-goals">4. Other Goals</h2>
+     * 
+     * Making the first link not work and the second link work, the 
+     * opposite of the expected behavior.
+     * Expected behavior is: id="3-design-goals" and id="4-other-goals"
+     */
+    function fixMismatchedAnchors() {
+        // Build a set of all IDs in the document for fast lookup
+        const allIds = new Set();
+        document.querySelectorAll('[id]').forEach(el => {
+            allIds.add(el.id);
+        });
+
+        // Process all in-page anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            const href = a.getAttribute('href');
+            if (!href || href === '#') return;
+
+            const targetId = href.slice(1); // Remove leading #
+
+            // If the target already exists, no fix needed
+            if (allIds.has(targetId)) return;
+
+            // Try stripping leading number patterns: "3-", "3.1-", "3.1.2-", etc.
+            // Pattern: digits followed by optional (.digits)* followed by separator (- or .)
+            const match = targetId.match(/^[\d.]+[-.](.+)$/);
+            if (match) {
+                const strippedId = match[1];
+                if (allIds.has(strippedId)) {
+                    // Found the actual element - fix the href
+                    a.setAttribute('href', '#' + strippedId);
+                    console.debug('Markdown Viewer: Fixed anchor', targetId, '->', strippedId);
+                }
+            }
+        });
+    }
+
+    function rewriteInPageAnchors() {
+        const page = window.location.href.split("#")[0];
+
+        document.querySelectorAll('a[href^="#"], a[href^="./#"]').forEach(
+            (a) => {
+                let href = a.getAttribute("href");
+                if (!href) return;
+
+                // Normalize "./#id" -> "#id"
+                if (href.startsWith("./#")) href = href.slice(1);
+
+                // Skip plain "#"
+                if (href === "#" || href === "") return;
+
+                if (!href.startsWith("#")) return;
+
+                a.setAttribute("href", page + href);
+            },
+        );
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", function () {
+            fixMismatchedAnchors();
+            rewriteInPageAnchors();
+        });
+    } else {
+        fixMismatchedAnchors();
+        rewriteInPageAnchors();
+    }
+})();
+
+(function () {
+    const cfg = window.mdviewer_config || {};
+    const base = cfg.mdDirBase;
+    if (!base) return;
+
+    function isMarkdownHref(href) {
+        return /\.(md|markdown)(\?.*)?(#.*)?$/i.test(href);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", rewriteMarkdownLinks);
+    } else {
+        rewriteMarkdownLinks();
+    }
+
+    function rewriteMarkdownLinks() {
+        document.querySelectorAll("a[href]").forEach((a) => {
+            const href = a.getAttribute("href");
+            if (!href) return;
+
+            const h = href.trim();
+
+            // Skip in-page anchors and already-custom protocol
+            if (h.startsWith("#") || h.toLowerCase().startsWith("mdview:")) {
+                return;
+            }
+
+            let abs;
+            try {
+                abs = new URL(h, base).href; // resolves against the markdown dir base
+            } catch {
+                return;
+            }
+
+            // Only rewrite local markdown targets
+            if (abs.toLowerCase().startsWith("file:") && isMarkdownHref(abs)) {
+                a.setAttribute("href", "mdview:" + abs);
+            }
+        });
+    }
+})();
+
+/**
+ * Markdown Viewer - Syntax Highlighting Module
+ * 
+ * Requirements:
+ * - highlight.js UMD build loaded globally as `window.hljs`
+ * - highlight-theme.css loaded (scoped to data-theme attribute)
+ * 
+ * Behavior:
+ * - Highlights code blocks with language-* or lang-* classes
+ * - Maps common aliases to highlight.js language names
+ * - Skips blocks without language class (no auto-detection)
+ * - Skips blocks exceeding size/count thresholds
+ * - Runs exactly once per page load
+ * - Never throws uncaught exceptions
+ */
+(function () {
+    'use strict';
+
+    // ===== CONFIGURATION =====
+
+    const MAX_BLOCK_SIZE = 102400; // 100 KB - skip larger blocks
+    const MAX_BLOCKS = 500;        // Max blocks to highlight per document
+
+    /**
+     * Language alias mapping: source class -> highlight.js language name
+     * 
+     * IMPORTANT: All target values (except 'plaintext') should exist in 
+     * hljs.listLanguages() for the shipped bundle.
+     */
+    const LANG_MAP = {
+        // PowerShell variants
+        'ps1': 'powershell',
+        'pwsh': 'powershell',
+        'psm1': 'powershell',
+        'psd1': 'powershell',
+
+        // Shell variants
+        'sh': 'bash',
+        'shell': 'bash',
+        'zsh': 'bash',
+
+        // JavaScript/TypeScript variants
+        'js': 'javascript',
+        'mjs': 'javascript',
+        'cjs': 'javascript',
+        'ts': 'typescript',
+        'tsx': 'typescript',
+        'jsx': 'javascript',
+
+        // Markup variants
+        'yml': 'yaml',
+        'md': 'markdown',
+        'htm': 'xml',
+        'xhtml': 'xml',
+        'svg': 'xml',
+
+        // Data format variants
+        'jsonc': 'json',
+        'json5': 'json',
+
+        // C-family variants
+        'c++': 'cpp',
+        'h': 'c',
+        'hpp': 'cpp',
+        'cc': 'cpp',
+        'cxx': 'cpp',
+        'cs': 'csharp',
+
+        // Other language shortcuts
+        'py': 'python',
+        'rb': 'ruby',
+        'rs': 'rust',
+        'kt': 'kotlin',
+        'kts': 'kotlin',
+        'pl': 'perl',
+        'pm': 'perl',
+
+        // Build/config files
+        'mk': 'makefile',
+        'bat': 'dos',
+        'cmd': 'dos',
+
+        // Plaintext (explicitly no highlighting)
+        'text': 'plaintext',
+        'txt': 'plaintext',
+        'plain': 'plaintext',
+        'none': 'plaintext'
+    };
+
+    // ===== GUARDS =====
+
+    // Guard: prevent double execution
+    let highlighted = false;
+
+    // ===== HELPER FUNCTIONS =====
+
+    /**
+     * Extract language identifier from element's class list.
+     * Looks for language-xxx or lang-xxx patterns.
+     * @returns {string|null} Lowercase language identifier or null
+     */
+    function getLanguageClass(codeEl) {
+        const match = codeEl.className.match(/(?:^|\s)(?:language-|lang-)(\S+)/);
+        return match ? match[1].toLowerCase() : null;
+    }
+
+    /**
+     * Map language alias to canonical highlight.js name.
+     * @returns {string} Canonical name or original if no mapping exists
+     */
+    function normalizeLanguage(lang) {
+        return LANG_MAP[lang] || lang;
+    }
+
+    /**
+     * Determine if a code block should be highlighted.
+     * @returns {boolean}
+     */
+    function shouldHighlight(codeEl) {
+        // Must have a language class
+        const lang = getLanguageClass(codeEl);
+        if (!lang) {
+            return false;
+        }
+
+        // Skip explicit plaintext
+        const normalized = normalizeLanguage(lang);
+        if (normalized === 'plaintext') {
+            return false;
+        }
+
+        // Skip oversized blocks
+        const size = codeEl.textContent.length;
+        if (size > MAX_BLOCK_SIZE) {
+            console.debug('Markdown Viewer: Skipping large block', {
+                language: lang,
+                size: size,
+                threshold: MAX_BLOCK_SIZE
+            });
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Highlight a single code block.
+     * Normalizes language class and applies highlighting.
+     * Never throws - catches and logs errors.
+     */
+    function highlightBlock(codeEl) {
+        try {
+            const lang = getLanguageClass(codeEl);
+            if (!lang) return;
+
+            const normalized = normalizeLanguage(lang);
+
+            // Update class to normalized language for highlight.js
+            codeEl.className = codeEl.className.replace(
+                /(?:language-|lang-)\S+/,
+                'language-' + normalized
+            );
+
+            hljs.highlightElement(codeEl);
+        } catch (err) {
+            console.warn('Markdown Viewer: Failed to highlight block', {
+                language: codeEl.className,
+                error: err.message
+            });
+            // Block remains unhighlighted - acceptable fallback
+        }
+    }
+
+    // ===== MAIN FUNCTION =====
+
+    /**
+     * Main highlighting entry point.
+     * Runs once per page load, never re-runs.
+     */
+    function runHighlighting() {
+        // Prevent re-execution
+        if (highlighted) return;
+        highlighted = true;
+
+        // Guard: highlight.js not loaded (deferred script may not have executed yet)
+        if (typeof hljs === 'undefined') {
+            console.warn('Markdown Viewer: highlight.js not loaded, syntax highlighting disabled');
+            return;
+        }
+
+        // Select only <pre><code> blocks with language classes
+        const selector = 'pre code[class*="language-"], pre code[class*="lang-"]';
+        const blocks = document.querySelectorAll(selector);
+
+        // Apply block count limit
+        const count = Math.min(blocks.length, MAX_BLOCKS);
+        if (blocks.length > MAX_BLOCKS) {
+            console.warn('Markdown Viewer: Limiting highlighting to', MAX_BLOCKS, 'of', blocks.length, 'blocks');
+        }
+
+        // Highlight eligible blocks
+        let highlightedCount = 0;
+        for (let i = 0; i < count; i++) {
+            if (shouldHighlight(blocks[i])) {
+                highlightBlock(blocks[i]);
+                highlightedCount++;
+            }
+        }
+
+        console.debug('Markdown Viewer: Highlighted', highlightedCount, 'code blocks');
+    }
+
+    // ===== INITIALIZATION =====
+
+    // Run after DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runHighlighting);
+    } else {
+        runHighlighting();
+    }
+})();
+
+</script>
+<h1 id="senior-engineer-take-home-multi-tenant-capex-budget-approval-platform">Senior Engineer Take-Home — Multi-Tenant CapEx Budget &amp; Approval Platform</h1>
+<blockquote>
+<p><strong>In plain terms:</strong> build an app where many separate companies share one system but must
+<strong>never</strong> see each other's data, users submit spending requests that need <strong>sign-off from
+a chain of managers</strong>, and bosses get a fast <strong>analytics dashboard</strong> of planned-vs-actual
+spending. The &quot;CapEx / budget&quot; framing is just a backdrop — <strong>this is fundamentally a
+multi-tenant access-control + analytics-at-scale problem.</strong> No finance background needed —
+read the primer below.</p>
+<p><em>(CapEx = &quot;Capital Expenditure&quot; = spending on big physical things like a new roof or
+HVAC system. You don't need to know more than that.)</em></p>
+</blockquote>
+<p><strong>Track:</strong> Full-Stack Platform Challenge
+<strong>Level:</strong> Senior (5+ years)
+<strong>Time box:</strong> <strong>6 hours, hard limit.</strong> See <em>How to spend the 6 hours</em> below.</p>
+<hr />
+<h2 id="read-this-first-how-we-grade">Read this first — how we grade</h2>
+<p>This is a <strong>platform</strong> challenge, not a feature checklist. We are evaluating whether you can
+make <strong>end-to-end architectural decisions</strong> — authorization, data aggregation, caching,
+real-time, and product tradeoffs — and stitch a backend and frontend into a coherent whole.
+The hard parts here are <strong>multi-tenant authorization (row-level security)</strong>, <strong>analytics
+that don't recompute from scratch on every request</strong>, and <strong>keeping a dashboard correct and
+fast under concurrent activity</strong>. Anyone can build CRUD; we want to see you choose <em>where</em>
+the complexity should live.</p>
+<p>Your submission has two parts and <strong>both are graded</strong>:</p>
+<ul>
+<li><strong>Part A — Working vertical slice.</strong> A runnable full-stack app (Django + DRF backend,
+React + TS frontend, Redis, a worker) that demonstrates the hard mechanisms end to end on
+seeded data — not every feature, but the <em>load-bearing</em> ones done correctly.</li>
+<li><strong>Part B — Design document (<code>DESIGN.md</code>).</strong> How the platform scales and stays correct at
+the stated volume, with explicit tradeoffs. Weighted as heavily as the code.</li>
+</ul>
+<p>A smaller slice where <strong>authz, caching, and aggregation are correct</strong>, plus a sharp design
+doc, <strong>beats</strong> a broad app that leaks data across tenants or recomputes analytics on every
+page load. <strong>Tell us what you deferred and why.</strong></p>
+<hr />
+<h2 id="domain-primer-no-finance-background-needed">Domain primer (no finance background needed)</h2>
+<p>You do <strong>not</strong> need to know accounting. Map every term to something you already understand:</p>
+<ul>
+<li><strong>CapEx (Capital Expenditure) project</strong> — a request to spend money on a big asset (e.g.
+&quot;$120k to replace the roof on Building 3&quot;). For you it's just a record with a title, a
+budgeted amount, an actual cost, a category, and a status. Treat &quot;CapEx project&quot; as &quot;a
+spending request.&quot;</li>
+<li><strong>Organization (tenant)</strong> — a separate customer company using the app. <strong>Multi-tenant</strong>
+means many organizations share one deployment but each must be completely walled off from
+the others' data. This isolation is the hardest, most important requirement.</li>
+<li><strong>Property</strong> — a sub-unit within an organization (e.g. a specific hotel/building). Projects
+belong to a property. Users are granted access to <em>specific</em> properties.</li>
+<li><strong>Budget / actuals / variance</strong> — plain arithmetic:
+<ul>
+<li><strong>Budget</strong> = the amount planned/allocated.</li>
+<li><strong>Actuals</strong> = the amount actually spent.</li>
+<li><strong>Variance</strong> = the difference (actuals − budget), usually shown as a % — i.e. &quot;how far
+over or under plan are we.&quot; These are the numbers the dashboard shows.</li>
+</ul>
+</li>
+<li><strong>Fiscal period</strong> — the financial year/quarter a budget applies to (e.g. &quot;FY2025&quot;). Just a
+grouping label.</li>
+<li><strong>Approval workflow (multi-level)</strong> — a request must be approved by several people <strong>in
+order</strong> before it's final (e.g. submitted → manager approves → finance approves →
+approved). Your backend enforces the rules: you can't skip a level, can't approve out of
+turn, and two people can't corrupt it by acting at once. It's a <strong>state machine</strong>.</li>
+<li><strong>Roles</strong> — who can do/see what: an <strong>org_admin</strong> sees their whole company; a
+<strong>property_manager / approver / viewer</strong> sees only the specific properties they're assigned
+to. (See the role table below.)</li>
+<li><strong>Row-level security (RLS)</strong> — the engineering requirement that the <em>server</em> (not just the
+UI) guarantees a user can only ever read/write rows they're entitled to — even if they
+guess an ID or hit the API directly. This is the crux of the assignment.</li>
+</ul>
+<p><strong>The engineering problem, stripped of finance:</strong> a multi-tenant app where (1) access control
+must be enforced centrally and be airtight (no company ever sees another's rows, no user sees
+properties they weren't granted — even via direct API calls), (2) an analytics dashboard must
+stay fast over millions of rows without recomputing everything on each request, and (3)
+status changes propagate live to the right users only. That's it.</p>
+<hr />
+<h2 id="the-scenario">The scenario</h2>
+<p>Blue Ocean builds capital-expenditure and approval platforms for large property portfolios
+(this mirrors a real engagement). Properties submit capital projects; budgets are allocated
+per property; projects move through a <strong>multi-level approval workflow</strong>; and leadership
+watches an <strong>analytics dashboard</strong> of budget-vs-actuals, variance, and approval throughput.</p>
+<blockquote>
+<p>You are building the core of this platform: a <strong>multi-tenant</strong> API where users only ever
+see data for properties they're entitled to (enforced server-side — <strong>row-level
+security</strong>), a <strong>background aggregation</strong> pipeline that feeds a <strong>cached analytics
+dashboard</strong>, <strong>real-time</strong> updates when approvals change, and a React dashboard that
+consumes it.</p>
+</blockquote>
+<h3 id="domain-model-minimum">Domain model (minimum)</h3>
+<ul>
+<li><strong>Organizations</strong> (tenants) → <strong>Properties</strong> → <strong>CapEx Projects</strong>.</li>
+<li><strong>Users</strong> with <strong>roles</strong>: <code>org_admin</code>, <code>property_manager</code>, <code>approver</code>, <code>viewer</code>. A user is
+scoped to one or more properties (except <code>org_admin</code>, scoped to the whole org).</li>
+<li><strong>Projects</strong> have a budget, a category, a status, and a cost (actuals). They move through
+<strong>approval levels</strong> (e.g. submitted → manager → finance → approved/rejected).</li>
+<li><strong>Budgets</strong> allocated per property per fiscal period.</li>
+</ul>
+<h3 id="scale-behavior-assumptions-these-are-the-point">Scale &amp; behavior assumptions (these are the point)</h3>
+<ul>
+<li><strong>500+ organizations</strong>, each with <strong>dozens of properties</strong>; <strong>~5 million projects</strong> total
+historically, growing steadily. A single org dashboard aggregates over <strong>tens of
+thousands</strong> of its own projects.</li>
+<li>The analytics dashboard (budget vs actuals, variance %, approval cycle time, spend by
+category, pending-approval backlog) is hit frequently and must load <strong>fast</strong> — it cannot
+run heavy <code>GROUP BY</code>s over millions of rows on every request.</li>
+<li><strong>Authorization is the hard requirement</strong>: a <code>property_manager</code> for Property A must be
+<strong>unable</strong> to read or mutate Property B's data through <em>any</em> endpoint — list, detail,
+analytics, export, or by guessing IDs. This must be enforced centrally, not per-view.</li>
+<li>Approval actions by one user must reflect on others' dashboards <strong>in near-real-time</strong>.</li>
+<li>Writes are concurrent: two approvers may act on the same project at once.</li>
+</ul>
+<hr />
+<h2 id="required-stack-blue-oceans-stack">Required stack (Blue Ocean's stack)</h2>
+<ul>
+<li><strong>Backend:</strong> Python 3.11+, <strong>Django + Django REST Framework</strong> (Django Ninja acceptable).</li>
+<li><strong>Redis required</strong> — used meaningfully for caching aggregates and/or as the worker
+broker / Channels layer.</li>
+<li><strong>Background worker required:</strong> <code>django-q2</code> / Celery / RQ (we use django-q2 + Celery).</li>
+<li><strong>Real-time:</strong> Django Channels (WebSocket) preferred; SSE or short-poll is acceptable <strong>if
+you justify it</strong> in <code>DESIGN.md</code>.</li>
+<li><strong>Database:</strong> Postgres preferred (SQLite acceptable for the slice; discuss the production
+DB — we run Azure SQL — in <code>DESIGN.md</code>).</li>
+<li><strong>Frontend:</strong> <strong>React 18 + TypeScript + Redux Toolkit + MUI</strong>, charts via Recharts/Chart.js.</li>
+<li><strong>Auth:</strong> JWT (DRF SimpleJWT) or session — your choice, defended. (We use JWT + Azure AD
+SSO in production; you do <strong>not</strong> need to integrate SSO — stub it and discuss.)</li>
+<li><strong>Containerized:</strong> <code>docker compose up</code> brings up API + worker + Redis + DB + frontend (or
+documented equivalent).</li>
+</ul>
+<hr />
+<h2 id="what-we-provide-harness">What we provide (<code>harness/</code>)</h2>
+<ul>
+<li><strong><code>seed.py</code></strong> — a Django-agnostic seeding script + spec that generates a realistic
+multi-tenant dataset (organizations, properties, users with roles, budgets, and a large
+volume of projects with statuses/costs) deterministically from a seed. Use it to populate
+your DB so your authz and aggregation are tested against real fan-out (one org with tens of
+thousands of projects, multiple tenants whose data must never mix).</li>
+<li><strong><code>README.md</code></strong> — the data shape, the role/entitlement matrix, and suggested fiscal periods.</li>
+</ul>
+<p>You implement the models/migrations; the seeder shows the exact shape to target (and can be
+adapted to your ORM).</p>
+<hr />
+<h2 id="part-a-working-vertical-slice-build-the-load-bearing-path-end-to-end">Part A — Working vertical slice (build the load-bearing path end to end)</h2>
+<p>You do <strong>not</strong> need every feature. You <strong>do</strong> need these mechanisms working correctly,
+end-to-end, on seeded multi-tenant data:</p>
+<ol>
+<li><p><strong>Authentication + multi-tenant authorization with row-level security.</strong></p>
+<ul>
+<li>Login issuing a token; role + property entitlements encoded server-side.</li>
+<li><strong>Central RLS enforcement</strong> — a queryset/permission layer (middleware, manager, or
+DRF permission + base queryset) so <strong>every</strong> read/write is automatically scoped to the
+caller's entitled properties. Demonstrate that Property A's manager gets <code>403</code>/<code>404</code>
+(your choice, defended) on Property B's project <strong>by ID</strong>, on list, and on analytics.</li>
+<li>Show it with a test: cross-tenant access is denied at the data layer, not just hidden
+in the UI.</li>
+</ul>
+</li>
+<li><p><strong>CapEx project + approval workflow.</strong></p>
+<ul>
+<li>CRUD for projects within the caller's scope.</li>
+<li>A multi-level approval action (submit → approve/reject at a level) with <strong>server-side
+state-machine</strong> validation (can't skip levels, can't approve your own past the allowed
+level, concurrent-action safety). One real workflow path is enough.</li>
+</ul>
+</li>
+<li><p><strong>Background aggregation feeding a cached analytics endpoint.</strong></p>
+<ul>
+<li>A <strong>worker job</strong> that computes per-org/per-property aggregates (budget vs actuals,
+variance %, spend by category, pending-approval count, avg approval cycle time) and
+stores them so the dashboard endpoint is <strong>fast</strong> (precomputed table and/or Redis
+cache) rather than scanning millions of rows per request.</li>
+<li>A defensible <strong>invalidation/refresh</strong> strategy (on write? on schedule? incremental?).
+Stale-but-fast vs fresh-but-slow is a core tradeoff — make a choice and defend it.</li>
+</ul>
+</li>
+<li><p><strong>Analytics dashboard endpoint(s)</strong> that serve the precomputed aggregates, scoped by RLS
+(an org_admin sees the org; a property_manager sees only their properties).</p>
+</li>
+<li><p><strong>Real-time approval updates.</strong> When an approval changes, connected dashboards update in
+near-real-time (Channels/WebSocket preferred). Scope the broadcast to the right tenant —
+don't leak another org's events.</p>
+</li>
+<li><p><strong>React dashboard (frontend).</strong> A real dashboard consuming the analytics endpoint: KPI
+cards + at least two charts (e.g. budget-vs-actuals by category, approval backlog/cycle
+time), a project list scoped to the user, and an approval action that updates
+<strong>optimistically</strong> and reflects the real-time event. Auth-gated; role-aware UI.</p>
+</li>
+<li><p><strong>Tests</strong> for the things that must be correct: <strong>cross-tenant denial</strong>, the approval
+state-machine rules, and the aggregation correctness (precomputed == ground truth).</p>
+</li>
+</ol>
+<p><strong>You do not need to:</strong> integrate real SSO, build every role's full UI, handle file uploads,
+or implement export (note it in <code>DESIGN.md</code>). Depth on authz + aggregation + real-time beats
+breadth.</p>
+<hr />
+<h2 id="part-b-design-document-design.md">Part B — Design document (<code>DESIGN.md</code>)</h2>
+<p>Graded as heavily as the code. Be concrete. Address:</p>
+<ol>
+<li><p><strong>Architecture + the path of a request</strong> (auth → RLS → data → cache), with a diagram.</p>
+</li>
+<li><p><strong>Authorization model &amp; enforcement.</strong> How RLS is enforced centrally so no endpoint can
+forget it. The threat model: how does Property B's data stay invisible across list,
+detail, analytics, export, and ID-guessing? <code>403</code> vs <code>404</code> and why. How roles compose.</p>
+</li>
+<li><p><strong>Analytics at scale.</strong> How the dashboard stays fast over <strong>5M+ projects / tens of
+thousands per org</strong>: precompute vs on-demand, where aggregates live, incremental vs full
+recompute, and your <strong>cache invalidation</strong> strategy and its staleness window. What the
+first-load and steady-state latencies are and why.</p>
+</li>
+<li><p><strong>Real-time delivery at scale.</strong> How approval events reach the right dashboards without
+cross-tenant leakage, fan-out cost, and what happens at 10k concurrent dashboard sockets.</p>
+</li>
+<li><p><strong>Concurrency &amp; correctness.</strong> Two approvers act at once; an aggregation job runs while
+writes land. How do you avoid lost updates / wrong aggregates?</p>
+</li>
+<li><p><strong>Production DB &amp; deployment.</strong> You used Postgres/SQLite; we run <strong>Azure SQL</strong> + AKS.
+What changes? Migrations, connection pooling, read replicas, indexing for the aggregates.</p>
+</li>
+<li><p><strong>Tradeoffs.</strong> The three biggest decisions, what you chose, what you gave up.</p>
+</li>
+</ol>
+<hr />
+<h2 id="deliverables">Deliverables</h2>
+<pre><code>your-submission/
+├── README.md          # setup/run (docker compose up), built vs deferred, time per area
+├── DESIGN.md          # Part B — architecture, authz, analytics, real-time, tradeoffs
+├── docker-compose.yml # API + worker + Redis + DB + frontend (or documented equivalent)
+├── backend/ ...       # Django + DRF + worker
+├── frontend/ ...      # React + TS + RTK + MUI
+└── tests/ ...         # cross-tenant denial, state machine, aggregation correctness
+</code></pre>
+<h2 id="submission">Submission</h2>
+<ul>
+<li>A <strong>Git repo</strong> (preferred) or zip without <code>node_modules</code> / <code>.venv</code> / build artifacts.</li>
+<li>Runnable with the documented command in <strong>under 10 minutes</strong>, seeded with multi-tenant data.</li>
+<li>You will <strong>walk us through the architecture and defend the authz + caching design</strong> in a
+30-minute call. Build only what you can explain.</li>
+</ul>
+<hr />
+<h2 id="how-to-spend-the-6-hours-suggested">How to spend the 6 hours (suggested)</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00–0:45</td>
+<td>Models + seed + decide RLS enforcement point and cache/aggregation strategy.</td>
+</tr>
+<tr>
+<td>0:45–2:30</td>
+<td>Auth + <strong>central RLS</strong> + project CRUD + approval state machine (backend).</td>
+</tr>
+<tr>
+<td>2:30–3:30</td>
+<td>Worker aggregation job + cached analytics endpoint + invalidation.</td>
+</tr>
+<tr>
+<td>3:30–4:15</td>
+<td>Real-time approval broadcast (tenant-scoped).</td>
+</tr>
+<tr>
+<td>4:15–5:15</td>
+<td>React dashboard: KPIs + 2 charts + optimistic approval + real-time.</td>
+</tr>
+<tr>
+<td>5:15–6:00</td>
+<td>Tests (cross-tenant denial, state machine, aggregation) + <code>DESIGN.md</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>If you run low, <strong>make authz airtight and write the design</strong> — a platform that leaks tenant
+data is an automatic fail no matter how nice the dashboard looks.</p>
+<hr />
+<h2 id="evaluation-what-we-weight">Evaluation (what we weight)</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Weight</th>
+<th>What we look for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Architecture &amp; design thinking</strong> (incl. <code>DESIGN.md</code>)</td>
+<td>25%</td>
+<td>Coherent end-to-end design; clear decisions; scaling reasoning; tradeoffs</td>
+</tr>
+<tr>
+<td><strong>Authorization &amp; multi-tenant correctness</strong></td>
+<td>25%</td>
+<td>Central RLS; no cross-tenant leak on any path; tested; sound <code>403</code>/<code>404</code> reasoning</td>
+</tr>
+<tr>
+<td><strong>Data aggregation &amp; caching</strong></td>
+<td>20%</td>
+<td>Precompute/cache that stays fast at scale; defensible invalidation; correct aggregates</td>
+</tr>
+<tr>
+<td><strong>Real-time &amp; concurrency</strong></td>
+<td>10%</td>
+<td>Tenant-scoped real-time; safe concurrent approvals</td>
+</tr>
+<tr>
+<td><strong>Frontend</strong></td>
+<td>10%</td>
+<td>Role-aware dashboard, optimistic approval, real-time reflected, sound TS</td>
+</tr>
+<tr>
+<td><strong>Code quality &amp; tests</strong></td>
+<td>10%</td>
+<td>Layered, readable; the right tests for authz/state/aggregation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bar:</strong> A senior offer requires strong marks in <em>both</em> Authorization and Aggregation/
+Caching. <strong>Any cross-tenant data leak is an automatic fail</strong>, regardless of the rest.</p>
+<h3 id="bonus-only-after-the-core-is-solid">Bonus (only after the core is solid)</h3>
+<ul>
+<li>Incremental aggregation (update rollups on write rather than full recompute).</li>
+<li>Optimistic concurrency control (version/ETag) on approvals with conflict handling.</li>
+<li>A meaningful index/query plan note for the aggregate queries on the production DB.</li>
+<li>Audit log of approval actions.</li>
+</ul>
+<hr />
+<h2 id="ground-rules">Ground rules</h2>
+<ul>
+<li>Use any libraries/AI assistants you like — <strong>you must defend every decision live</strong>.
+Unexplained code counts against you.</li>
+<li><strong>Authorization is enforced server-side, centrally.</strong> Hiding data only in the React UI is
+a fail — we will hit the API directly with the wrong user's token.</li>
+<li>State your assumptions in writing. Senior engineers make assumptions explicit.</li>
+</ul>
+
+</body>
+</html>
